@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">校创431</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_out">退出</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_aboutus">AboutusActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        
+    </style>
+</resources>

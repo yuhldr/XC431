@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\file\\android studio\\wificar1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_control.xml",
+        "source": "F:\\file\\android studio\\wificar1\\app\\src\\main\\res\\layout\\activity_control.xml"
+    },
+    {
+        "merged": "F:\\file\\android studio\\wificar1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_wificar.xml",
+        "source": "F:\\file\\android studio\\wificar1\\app\\src\\main\\res\\layout\\activity_wificar.xml"
+    },
+    {
+        "merged": "F:\\file\\android studio\\wificar1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_setting.xml",
+        "source": "F:\\file\\android studio\\wificar1\\app\\src\\main\\res\\layout\\activity_setting.xml"
+    }
+]

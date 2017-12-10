@@ -1,0 +1,31 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".WificarActivity" >
+
+    <Button
+        android:id="@+id/ctr"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="162dp"
+        android:layout_y="250dp"
+        android:background="@drawable/ctr" />
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="391dp"
+        android:layout_y="254dp"
+        android:background="@drawable/set" />
+
+    <ImageView
+        android:id="@+id/school"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:layout_x="213dp"
+        android:layout_y="69dp"
+        android:background="@drawable/school" />
+</AbsoluteLayout>

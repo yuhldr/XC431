@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="Deprecated" severity="ignore" />
+    <issue id="HardcodedText" severity="ignore" />
+    <issue id="OldTargetApi" severity="ignore" />
+    <issue id="ShowToast" severity="ignore" />
+    <issue id="TextFields" severity="ignore" />
+    <issue id="UselessParent" severity="ignore" />
+</lint>

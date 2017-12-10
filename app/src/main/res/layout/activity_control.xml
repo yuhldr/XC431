@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.yuh.XC431.MySurfaceView
+        android:id="@+id/mySurfaceView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/Btn_wifi"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="276dp"
+        android:layout_y="260dp"
+        android:background="@drawable/disconnect" />
+
+    <Button
+        android:id="@+id/Btn_left"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="6dp"
+        android:layout_y="240dp"
+        android:background="@drawable/turnleft" />
+
+    <Button
+        android:id="@+id/Btn_right"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="122dp"
+        android:layout_y="240dp"
+        android:background="@drawable/turnright" />
+
+    <Button
+        android:id="@+id/Btn_forword"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="65dp"
+        android:layout_y="180dp"
+        android:background="@drawable/gohead" />
+
+    <Button
+        android:id="@+id/Btn_back"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="65dp"
+        android:layout_y="300dp"
+        android:background="@drawable/goback" />
+
+    <Button
+        android:id="@+id/Btn_stop"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="65dp"
+        android:layout_y="240dp"
+        android:background="@drawable/stop" />
+
+    <Button
+        android:id="@+id/Btn_djback"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="466dp"
+        android:layout_y="300dp"
+        android:background="@drawable/goback" />
+
+    <Button
+        android:id="@+id/Btn_djforword"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="466dp"
+        android:layout_y="180dp"
+        android:background="@drawable/gohead" />
+
+    <Button
+        android:id="@+id/Btn_djleft"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="402dp"
+        android:layout_y="240dp"
+        android:background="@drawable/turnleft" />
+
+    <Button
+        android:id="@+id/Btndj_stop"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="466dp"
+        android:layout_y="240dp"
+        android:background="@drawable/stop" />
+
+    <Button
+        android:id="@+id/btnbz"
+        android:textSize="12sp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="324dp"
+        android:layout_y="2dp"
+        android:background="@drawable/stop"
+        android:text="自动蔽障运行" />
+
+    <Button
+        android:id="@+id/btnwsd"
+        android:textSize="12sp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="231dp"
+        android:layout_y="3dp"
+        android:background="@drawable/stop"
+        android:text="温湿度" />
+
+    <Button
+        android:id="@+id/Btn_djright"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_x="525dp"
+        android:layout_y="240dp"
+        android:background="@drawable/turnright" />
+
+
+</AbsoluteLayout>

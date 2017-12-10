@@ -1,0 +1,7 @@
+#Sun Sep 10 17:17:01 CST 2017
+base.0=F\:\\file\\android studio\\wificar1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_1cd2e4cefee35cc89987d4cbe035d027dd324e91
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=F\:\\file\\android studio\\wificar1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_5dde15fd46f0d32cec656170a05f7b012ce2c425\\classes.dex
+base.1=F\:\\file\\android studio\\wificar1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_5dde15fd46f0d32cec656170a05f7b012ce2c425
+file.0=F\:\\file\\android studio\\wificar1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_1cd2e4cefee35cc89987d4cbe035d027dd324e91\\classes.dex

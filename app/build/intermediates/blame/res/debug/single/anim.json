@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "F:\\file\\android studio\\wificar1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\right_in.xml",
+        "source": "F:\\file\\android studio\\wificar1\\app\\src\\main\\res\\anim\\right_in.xml"
+    },
+    {
+        "merged": "F:\\file\\android studio\\wificar1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\right_out.xml",
+        "source": "F:\\file\\android studio\\wificar1\\app\\src\\main\\res\\anim\\right_out.xml"
+    },
+    {
+        "merged": "F:\\file\\android studio\\wificar1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\up_in.xml",
+        "source": "F:\\file\\android studio\\wificar1\\app\\src\\main\\res\\anim\\up_in.xml"
+    },
+    {
+        "merged": "F:\\file\\android studio\\wificar1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\left_out.xml",
+        "source": "F:\\file\\android studio\\wificar1\\app\\src\\main\\res\\anim\\left_out.xml"
+    },
+    {
+        "merged": "F:\\file\\android studio\\wificar1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\up_out.xml",
+        "source": "F:\\file\\android studio\\wificar1\\app\\src\\main\\res\\anim\\up_out.xml"
+    },
+    {
+        "merged": "F:\\file\\android studio\\wificar1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\bottom_out.xml",
+        "source": "F:\\file\\android studio\\wificar1\\app\\src\\main\\res\\anim\\bottom_out.xml"
+    },
+    {
+        "merged": "F:\\file\\android studio\\wificar1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\left_in.xml",
+        "source": "F:\\file\\android studio\\wificar1\\app\\src\\main\\res\\anim\\left_in.xml"
+    },
+    {
+        "merged": "F:\\file\\android studio\\wificar1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\bottom_in.xml",
+        "source": "F:\\file\\android studio\\wificar1\\app\\src\\main\\res\\anim\\bottom_in.xml"
+    }
+]

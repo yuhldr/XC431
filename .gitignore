@@ -1,0 +1,13 @@
+
+*.bin
+*.bin
+*.bin
+*.lock
+*.xml
+*.class
+*.txt
+*.flat
+*.dex
+*.xml
+build/android-profile/profile-2017-12-10-14-23-25-273.rawproto
+*.apk

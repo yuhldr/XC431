@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sun Dec 10 14:25:11 CST 2017
+0.baseType=DIRECTORY
+0.base=E\:\\file\\android studio\\Git\\wificar1\\app\\build\\intermediates\\transforms\\dex\\release\\0
+0.path=classes.dex
+0.set=DEX
+count=1

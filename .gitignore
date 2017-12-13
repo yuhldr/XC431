@@ -11,3 +11,15 @@
 *.xml
 build/android-profile/profile-2017-12-10-14-23-25-273.rawproto
 *.apk
+.gradle/4.1/fileHashes/fileHashes.bin
+.gradle/4.1/fileHashes/fileHashes.lock
+*.lock
+build/android-profile/profile-2017-12-10-20-16-39-928.json
+build/android-profile/profile-2017-12-10-20-16-39-928.rawproto
+build/android-profile/profile-2017-12-10-20-16-47-970.rawproto
+build/android-profile/profile-2017-12-10-20-16-39-928.rawproto
+.gradle/4.1/taskHistory/taskHistory.lock
+*.bin
+*.json
+.gradle/4.1/fileHashes/fileHashes.bin
+.gradle/4.1/taskHistory/taskHistory.lock

@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
@@ -49,10 +50,14 @@ implements OnGestureListener{
 	private Button Btn_djleft;
 	private Button Btn_djcenter;
 	private Button Btn_djright;
+	private Button Btn_bz;
+	private Button Btn_wsd;
+
 	private String getstop ;
 	private String getcontrolip;
 	private String getvideoip;
 	
+	@SuppressLint("ClickableViewAccessibility")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -65,23 +70,30 @@ implements OnGestureListener{
         //根据key寻找值 参数1 key 参数2 如果没有value显示的内容
         getvideoip = share.getString("videoip", "http://192.168.1.1:8080?action=snapshot");
         getcontrolip  = share.getString("controlip", "192.168.1.1:2001");
-		final String getforword  = share.getString("forword", "f");
+		final String getforword  = share.getString("forword", "a");
 		final String getback  = share.getString("back", "b");
-		final String getturnleft  = share.getString("turnleft", "c");
-		final String getturnright  = share.getString("turnright", "d");
+		final String getturnleft  = share.getString("turnleft", "d");
+		final String getturnright  = share.getString("turnright", "c");
+		final String getbz  = share.getString("bz", "g");
+		final String getwsd  = share.getString("wsd", "f");
 
-		final String getdjleft  = share.getString("djleft", "5");
-		final String getdjcenter  = share.getString("djcenter", "6");
-		final String getdjright  = share.getString("djright", "7");
-		getstop = share.getString("stop", "0");
+
+		final String getdjleft  = share.getString("djleft", "1");
+		final String getdjcenter  = share.getString("djcenter", "2");
+		final String getdjright  = share.getString("djright", "3");
+		getstop = share.getString("stop", "e");
 		
 	   Btn_goforword= (Button)findViewById(R.id.Btn_forword);
 	   Btn_goback= (Button)findViewById(R.id.Btn_back);
 	   Btn_turnleft= (Button)findViewById(R.id.Btn_left);
 	   Btn_turnright= (Button)findViewById(R.id.Btn_right);
-	   Btn_openwifi= (Button)findViewById(R.id.Btn_wifi);
-	  
-	   Btn_goforword.setOnTouchListener(new View.OnTouchListener() {		
+	   Btn_bz= (Button)findViewById(R.id.btnbz);
+	   Btn_wsd= (Button)findViewById(R.id.btnwsd);
+
+
+		Btn_openwifi= (Button)findViewById(R.id.Btn_wifi);
+
+	   Btn_goforword.setOnTouchListener(new View.OnTouchListener() {
 		@Override
 		public boolean onTouch(View v, MotionEvent event) {
 			if(isConnect)
@@ -104,12 +116,62 @@ implements OnGestureListener{
 			
 			}
 			else {
-				Toast.makeText(controlActivity.this,"请先连接wificar！",200).show();
+				Toast.makeText(controlActivity.this,"请先连接wificar！",Toast.LENGTH_SHORT).show();
 			}
 			return false;
 		   
 		}
 	});
+
+		Btn_bz.setOnTouchListener(new View.OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				if(isConnect)
+				{
+					int action = event.getAction();
+					switch (action) {
+						case MotionEvent.ACTION_DOWN:
+							mPrintWriterClient.print(getbz);
+							mPrintWriterClient.flush();
+							//Toast.makeText(controlActivity.this,"前进",500).show();
+							break;
+						default:
+							break;
+					}
+
+				}
+				else {
+					Toast.makeText(controlActivity.this,"请先连接wificar！",Toast.LENGTH_SHORT).show();
+				}
+				return false;
+
+			}
+		});
+
+		Btn_wsd.setOnTouchListener(new View.OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				if(isConnect)
+				{
+					int action = event.getAction();
+					switch (action) {
+						case MotionEvent.ACTION_DOWN:
+							mPrintWriterClient.print(getwsd);
+							mPrintWriterClient.flush();
+							//Toast.makeText(controlActivity.this,"前进",500).show();
+							break;
+						default:
+							break;
+					}
+
+				}
+				else {
+					Toast.makeText(controlActivity.this,"请先连接wificar！",Toast.LENGTH_SHORT).show();
+				}
+				return false;
+
+			}
+		});
 	 
 	   Btn_goback.setOnTouchListener(new View.OnTouchListener() {		
 			@Override
@@ -121,7 +183,7 @@ implements OnGestureListener{
 				case MotionEvent.ACTION_DOWN:
 					 mPrintWriterClient.print(getback);
 	                 mPrintWriterClient.flush();
-		    		 Toast.makeText(controlActivity.this,"后退",500).show();
+		    		 //Toast.makeText(controlActivity.this,"后退",Toast.LENGTH_SHORT).show();
 					break;
 				case MotionEvent.ACTION_UP:
 					 mPrintWriterClient.print(getstop);
@@ -134,12 +196,14 @@ implements OnGestureListener{
 				
 				}
 				else {
-					Toast.makeText(controlActivity.this,"请先连接wificar！",200).show();
+					Toast.makeText(controlActivity.this,"请先连接wificar！",Toast.LENGTH_SHORT).show();
 				}
 				return false;
 			   
 			}
 		});
+
+
 	   Btn_turnleft.setOnTouchListener(new View.OnTouchListener() {		
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
@@ -150,7 +214,7 @@ implements OnGestureListener{
 				case MotionEvent.ACTION_DOWN:
 					 mPrintWriterClient.print(getturnleft);
 	                 mPrintWriterClient.flush();
-		    		 Toast.makeText(controlActivity.this,"左转",500).show();
+		    		 //Toast.makeText(controlActivity.this,"左转",Toast.LENGTH_SHORT).show();
 					break;
 				case MotionEvent.ACTION_UP:
 					 mPrintWriterClient.print(getstop);
@@ -163,15 +227,18 @@ implements OnGestureListener{
 				
 				}
 				else {
-					Toast.makeText(controlActivity.this,"请先连接wificar！",200).show();
+					Toast.makeText(controlActivity.this,"请先连接wificar！",Toast.LENGTH_SHORT).show();
 				}
 				return false;
 			   
 			}
 		});
-	   
-	   Btn_turnright.setOnTouchListener(new View.OnTouchListener() {		
+
+
+
+	   Btn_turnright.setOnTouchListener(new View.OnTouchListener() {
 			@Override
+
 			public boolean onTouch(View v, MotionEvent event) {
 				if(isConnect)
 				{
@@ -180,7 +247,7 @@ implements OnGestureListener{
 				case MotionEvent.ACTION_DOWN:
 					 mPrintWriterClient.print(getturnright);
 	                 mPrintWriterClient.flush();
-		    		 Toast.makeText(controlActivity.this,"右转",500).show();
+		    		 //Toast.makeText(controlActivity.this,"右转",Toast.LENGTH_SHORT).show();
 					break;
 				case MotionEvent.ACTION_UP:
 					 mPrintWriterClient.print(getstop);
@@ -193,7 +260,7 @@ implements OnGestureListener{
 				
 				}
 				else {
-					Toast.makeText(controlActivity.this,"请先连接wificar！",200).show();
+					Toast.makeText(controlActivity.this,"请先连接wificar！",Toast.LENGTH_SHORT).show();
 				}
 				return false;
 			   
@@ -210,7 +277,7 @@ implements OnGestureListener{
 	    	        mThreadClient = new Thread(mRunnable);
 	    		    mThreadClient.start();
 	    		  Btn_openwifi.setBackgroundResource(R.drawable.connect);
-	    		  Toast.makeText(controlActivity.this,"尝试连接网络",500).show();
+	    		  Toast.makeText(controlActivity.this,"尝试连接网络",Toast.LENGTH_SHORT).show();
 	    		  }
 	    		  else {
 	    			  onDestroy();
@@ -253,7 +320,7 @@ implements OnGestureListener{
 		//将该Activity上的触碰事件交给GestureDetector处理
 		 //mPrintWriterClient.print(getstop);
          //mPrintWriterClient.flush();
-		 Toast.makeText(controlActivity.this,"touchme",500).show();
+		 Toast.makeText(controlActivity.this,"touchme",Toast.LENGTH_SHORT).show();
 		return detector.onTouchEvent(event);
 	}		
 	@Override
@@ -282,9 +349,7 @@ implements OnGestureListener{
 	}	
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
          // TODO Auto-generated method stub
-         if (((keyCode == KeyEvent.KEYCODE_BACK) ||
-(keyCode == KeyEvent.KEYCODE_HOME))
-&& event.getRepeatCount() == 0) {
+         if (((keyCode == KeyEvent.KEYCODE_BACK) || (keyCode == KeyEvent.KEYCODE_HOME))&& event.getRepeatCount() == 0) {
         	 this.finish();
  			overridePendingTransition(R.anim.right_in, R.anim.right_out);
  			
@@ -360,6 +425,7 @@ implements OnGestureListener{
 				}
 			}
 		};
+		@SuppressLint("HandlerLeak")
 		Handler mHandler = new Handler()
 		{						
 			public void handleMessage(Message msg)										
@@ -368,11 +434,11 @@ implements OnGestureListener{
 				  if(msg.what == 1)
 				  {
 				  
-				  Toast.makeText(controlActivity.this,recvMessageClient,300).show();
+				  	Toast.makeText(controlActivity.this,recvMessageClient,Toast.LENGTH_SHORT).show();
 				  }
 				  if(msg.what == 0)
 				  {
-				Toast.makeText(controlActivity.this,recvMessageClient,300).show();
+					Toast.makeText(controlActivity.this,recvMessageClient,Toast.LENGTH_SHORT).show();
 				 
 				  }
 			  }									

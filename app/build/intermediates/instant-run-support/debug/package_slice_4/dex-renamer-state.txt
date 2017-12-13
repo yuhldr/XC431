@@ -1,4 +1,4 @@
-#Sun Dec 10 13:49:34 CST 2017
-base.0=E\:\\file\\android studio\\Git\\wificar1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+#Wed Dec 13 14:38:19 CST 2017
+base.0=E\:\\file\\android studio\\Git\\wificar1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\35
 path.0=classes.dex
 renamed.0=classes.dex

@@ -39,14 +39,14 @@ public class SettingActivity extends Activity {
         //根据key寻找值 参数1 key 参数2 如果没有value显示的内容
         String getvideoip = share.getString("videoip", "http://192.168.1.1:8080?action=naspshot");
 		String getcontrolip  = share.getString("controlip", "192.168.1.1:2001");
-		String getforword  = share.getString("forword", "4");
-		String getback  = share.getString("back", "2");
-		String getturnleft  = share.getString("turnleft", "3");
-		String getturnright  = share.getString("turnright", "1");
+		String getforword  = share.getString("forword", "a");
+		String getback  = share.getString("back", "b");
+		String getturnleft  = share.getString("turnleft", "c");
+		String getturnright  = share.getString("turnright", "d");
 		String getdjleft  = share.getString("djleft", "5");
 		String getdjcenter  = share.getString("djcenter", "6");
 		String getdjright  = share.getString("djright", "7");
-		String getstop = share.getString("stop", "0");
+		String getstop = share.getString("stop", "e");
 		
 		//获取输入框
 		vedio_EditText = (EditText)SettingActivity.this.findViewById(R.id.editvideo);
